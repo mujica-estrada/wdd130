@@ -13,7 +13,7 @@ h1 {
     color: darkblue;
 }
 
-img {
+main img {
     width: 150px;
     height: 150px;
     border: 1px solid black;
@@ -22,7 +22,7 @@ img {
 }
 
 p {
-    padding: 0px;
+    padding: 0;
 }
 
 main {
