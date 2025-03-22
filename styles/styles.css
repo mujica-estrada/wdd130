@@ -26,7 +26,7 @@ main img {
     width: 150px;
     height: 150px;
     border: var(--border);
-    padding: 2px;
+    padding: var(--padding-small);
     box-shadow: var(--shadow);
 }
 
