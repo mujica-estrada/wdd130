@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+:root {
+    --color-primary-head: #023047;
+    --color-primary-text: #ffb703;
+    --color-accent1: #219EBC;
+    --color-accent2: #fb8500;
+    --color-text: #023047;
+    --font-heading: 'Monstserrat', sans-serif;
+    --font-body: 'Nunito', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: white;
+    color: white;
+    max-width: 1200px;
+    margin: 5px;
+    padding: 20px;
+}
+
+header {
+    background-color: white;
+    color: #fb8500;
+    margin: 0;
+    text-align: center;
+    font-family: var(--font-heading);
+}
+
+header img {
+    width: 80px;
+    height: auto;
+    border-image: round;
+    padding: 5px;
+}
+
+nav a {
+    color: #ffb703;
+    text-decoration: none;
+    margin: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: var(--font-body);
+}
+
+.hero {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+h1 {
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    background-color: #219dbc76;
+    color: #fb8500;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-shadow: 1px 1px 4px #023047;
+    z-index: 2;
+    text-align: center;
+    padding: 10px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    right: 5%;
+    background: #ffffff73;
+    padding: 1rem;
+    border-radius: 10px;
+    color: #023047;
+    font-family: var(--font-body);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero article img {
+    width: 120px;
+    border-radius: 10px;
+}
+
+section {
+    margin: 1rem;
+    background-color: #ffb803;
+    padding: 1rem;
+    border-radius: 12px;
+    color: var(--color-text);
+}
+   
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+   
+section img {
+    width: 100%;
+    max-width: 200px;
+    margin: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px #023047;
+}
+
+footer {
+    background-color: #023047;
+    color: #fb8500;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-top: 4px solid #ffb703;
+   }
+   
+footer p {
+    margin-bottom: 1rem;
+   }
+   
+.sociallinks a {
+    text-decoration: none;
+    margin: 10px;
+}
+   
+.sociallinks img {
+    width: 30px;
+    height: auto;
+    filter: brightness(1.1);
+    border-radius: 15px;
+}
