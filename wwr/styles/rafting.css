@@ -1,8 +1,9 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
+
 :root {
     --color-primary-head: #023047;
     --color-primary-text: #ffb703;
@@ -55,16 +56,16 @@ nav a {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 h1 {
     position: absolute;
-    top: 140px;
+    top: 120px;
     left: 50%;
     transform: translateX(-50%);
     font-family: var(--font-heading);
-    font-size: 3rem;
+    font-size: 3.5rem;
     background-color: #219dbc76;
     color: #fb8500;
     padding: 1rem 2rem;
@@ -91,7 +92,9 @@ h1 {
 }
 
 .hero article img {
-    width: 120px;
+    float: right;
+    width: 130px;
+    margin-right: 20px;
     border-radius: 10px;
 }
 
@@ -102,12 +105,13 @@ section {
     border-radius: 12px;
     color: var(--color-text);
 }
-   
+
 p {
     font-size: 1.1rem;
     line-height: 1.5;
+    text-indent: 10px;
 }
-   
+
 section img {
     width: 100%;
     max-width: 200px;
@@ -123,17 +127,17 @@ footer {
     padding: 1.5rem;
     margin-top: 2rem;
     border-top: 4px solid #ffb703;
-   }
-   
+}
+
 footer p {
     margin-bottom: 1rem;
-   }
-   
+}
+
 .sociallinks a {
     text-decoration: none;
     margin: 10px;
 }
-   
+
 .sociallinks img {
     width: 30px;
     height: auto;
