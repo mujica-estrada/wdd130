@@ -114,6 +114,7 @@ h1 {
     font-size: 1.1rem;
     line-height: 1.5;
     padding: 10px;
+    text-align: justify;
     color: var(--color-primary-text);
     font-family: var(--font-body);
 }
@@ -139,6 +140,7 @@ p {
     margin-left: 20px;
     padding: 10px;
     color: var(--color-text);
+    text-align:justify;
 }
 
 section img {
