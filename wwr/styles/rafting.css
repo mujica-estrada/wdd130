@@ -24,7 +24,7 @@ body {
 }
 
 header {
-    background-color: white;
+    background-color: var(--color-primary-head);
     color: #fb8500;
     margin: 0;
     text-align: center;
@@ -34,7 +34,7 @@ header {
 header img {
     width: 80px;
     height: auto;
-    border-image: round;
+    border-radius: 5px;
     padding: 5px;
 }
 
@@ -56,66 +56,80 @@ nav a {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 10px;
 }
 
 h1 {
     position: absolute;
-    top: 120px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 60%;
+    left: 0%;
+    right: 0%;
+    text-align: center;
+    align-content: center;
     font-family: var(--font-heading);
-    font-size: 3.5rem;
-    background-color: #219dbc76;
+    font-size: 3rem;
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.534);
     color: #fb8500;
     padding: 1rem 2rem;
-    border-radius: 10px;
     text-shadow: 1px 1px 4px #023047;
-    z-index: 2;
-    text-align: center;
     padding: 10px;
 }
 
 .hero article {
     position: absolute;
+    display: flex;
     bottom: 10%;
     left: 5%;
     right: 5%;
-    background: #ffffff73;
+    background: #012e39d4;
     padding: 1rem;
     border-radius: 10px;
-    color: #023047;
-    font-family: var(--font-body);
-    display: flex;
-    align-items: center;
+    color: var(--color-primary-text);
     gap: 1rem;
 }
 
 .hero article img {
     float: right;
     width: 130px;
-    margin-right: 20px;
+    margin: 10px;
     border-radius: 10px;
+    box-shadow: 3px 4px #fb8500;
+}
+
+.hero article p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding: 10px;
+    color: var(--color-primary-text);
+    font-family: var(--font-body);
 }
 
 section {
-    margin: 1rem;
-    background-color: #ffb803;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #ffb703;
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 16px;
+    background-color: #023047;
     padding: 1rem;
     border-radius: 12px;
-    color: var(--color-text);
+    color: #fb8500;
 }
 
 p {
     font-size: 1.1rem;
     line-height: 1.5;
-    text-indent: 10px;
+    margin-left: 20px;
+    padding: 10px;
+    color: var(--color-text);
 }
 
 section img {
-    width: 100%;
     max-width: 200px;
-    margin: 0.5rem;
+    margin: 5px;
     border-radius: 10px;
     box-shadow: 0 4px 4px #023047;
 }
@@ -131,6 +145,7 @@ footer {
 
 footer p {
     margin-bottom: 1rem;
+    color: #fb8500;
 }
 
 .sociallinks a {
