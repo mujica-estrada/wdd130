@@ -17,7 +17,7 @@
 body {
     font-family: var(--font-body);
     background-color: white;
-    color: white;
+    color: navy;
     max-width: 1200px;
     margin: 5px;
     padding: 20px;
@@ -244,3 +244,137 @@ footer p {
     filter: brightness(1.1);
     border-radius: 15px;
 }
+
+/* Forms */
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+  }
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+  }
+
+.radio-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.radio-list li {
+    align-content: center;
+    text-align: center;
+}
+
+.radio-list input[type="radio"] {
+    margin-right: 1px;   
+}
+
+.purpose {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #180505;
+    padding-bottom: 10px;
+    margin-top: 1rem;
+    margin-bottom: 6px;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;    
+}
+
+.map iframe {
+    max-width: 90%;
+    height: 400px;
+    margin-bottom: 1rem;
+}
+
+.margin {
+    margin-top: 1rem;
+}
+
+.contact {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    color: var(--color-text);
+}
+
+.contact p {
+    
+    text-align:justify;
+    border: 2px solid #012e39d4;
+    background-color: #ffb703;
+    border-radius: 10px;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+  }
+  
+fieldset {
+    display: grid;
+    gap: 0.5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+  }
+  
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3em;
+  }
+  
+label, input, select, textarea, button {
+    font-family: var(--font-body);
+  }
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+  }
+  
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+  }
+  
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+  }
+
+button {
+    margin: 1rem auto;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+  }
+  
+button:hover {
+    background-color: darkgreen; 
+}
+
+

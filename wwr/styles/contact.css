@@ -304,3 +304,35 @@ footer p {
     filter: brightness(1.1);
     border-radius: 15px;
 }
+
+
+
+.clean {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    height: 120px;
+    background-color: var(--color-primary-head);
+    color: #fb8500;
+    padding: 1rem 2rem;
+    text-shadow: 1px 1px 4px #023047;
+    padding: 10px;
+    margin: 2rem auto;
+}
+
+.clean h1{
+    position: absolute;
+    bottom: 65%;
+    left: 0%;
+    right: 0%;
+    text-align: center;
+    align-content: center;
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    height: 120px;
+    background-color: var(--color-primary-head);
+    color: #fb8500;
+    padding: 1rem 2rem;
+    text-shadow: 1px 1px 4px #023047;
+    padding: 10px;
+    margin: 2rem auto;
+}
