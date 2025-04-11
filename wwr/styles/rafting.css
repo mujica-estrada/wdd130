@@ -123,9 +123,11 @@ h1 {
 section {
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 2rem;
     background-color: #ffb703;
     border-radius: 10px;
 }
+
 h2 {
     margin: 16px;
     background-color: #023047;
@@ -192,8 +194,7 @@ section img {
 .box img {
     width: auto;
     height: auto;
-    margin-top: 30px;
-    margin-bottom: 35px;
+    margin: auto;
 }
 
 /* Adventure */
@@ -237,6 +238,7 @@ footer p {
     gap: 1rem;
     text-decoration: none;
     margin: 10px;
+    color: #fb8500;
 }
 
 .sociallinks li {
@@ -257,15 +259,19 @@ footer p {
     align-items: center;
 }
 
-.column1 {
-    grid-template-columns: 3fr 1fr;
-    margin: 0.5rem 0;
-  }
-
-.column2 {
+.form-row {
+    display: grid;
     grid-template-columns: 1fr 2fr;
-  }
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+    align-items: center;
+}
 
+.form-section {
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+}
 .radio-list {
     list-style: none;
     display: flex;
@@ -288,7 +294,13 @@ footer p {
     border-bottom: 1px solid #180505;
     padding-bottom: 10px;
     margin-top: 1rem;
-    margin-bottom: 6px;
+    padding-bottom: 1rem;
+}
+
+.purpose button {
+    border-radius: 12px;
+    margin-right: 2rem;
+    width: 200px;
 }
 
 .map {
@@ -323,16 +335,6 @@ footer p {
     background-color: #ffb703;
     border-radius: 10px;
 }
-
-form {
-    width: 650px;
-    margin: 0 auto;
-    padding: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.1);
-    border-radius: 0.5rem;
-    background-color: #eee;
-    display: grid;
-  }
   
 fieldset {
     display: grid;
@@ -369,12 +371,13 @@ input[type="checkbox"] {
   }
 
 button {
+    display: block;
     margin: 1rem auto;
     background-color: navy;
     color: #fff;
     border: none;
     border-radius: 0.5rem;
-    padding: 0.75rem;
+    padding: 0.75rem 2rem;
     font-size: 1.2rem;
   }
   
@@ -383,3 +386,161 @@ button:hover {
 }
 
 
+/* Forms HOme */
+
+.contact-form {
+    background-color: #bbccf7;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(2, 48, 71, 0.2);
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-form fieldset {
+    position: relative;
+}
+
+.contact-form fieldset img {
+    display: block;
+    margin: 1rem auto;
+    width: 100px;
+    box-shadow: none;
+}
+
+.home, .home-section {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+form:not(.contact-form) {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+
+/* H1 HOme */
+
+.hero-cta {
+    position: relative;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-cta img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-cta h1 {
+    position: absolute;
+    bottom: 65%;
+    left: 0%;
+    right: 0%;
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    height: 120px;
+    background-color:#012e39d4;
+    color: #fb8500;
+    padding: 1rem 2rem;
+    text-shadow: 1px 1px 4px #023047;
+    padding: 10px;
+}
+
+.hero-cta article {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    right: 5%;
+    background: #012e39d4;
+    color: #ffb703;
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--color-primary-text);
+    text-align: center;
+}
+
+.hero-cta article p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding: 10px;
+    text-align: justify;
+    color: var(--color-primary-text);
+    font-family: var(--font-body);
+}
+
+.hero-cta article button{
+    display: block;
+    width: 240px;
+    background-color: navy;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    margin: 1rem auto;
+}
+.hero-cta article a{
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.hero-cta h3 {
+    color: white;
+    border-bottom: 1px solid whitesmoke;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.photos .icon {
+    width: 70px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    display: block;
+    box-shadow: none;
+    border-radius: 0;
+}
+.home-wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: white;
+    gap: 2rem;
+    margin: 2rem auto;
+    margin-left: 2rem;
+}
+
+.home-section {
+    background-color: white;
+}
+
+.btn-link {
+    display: block;
+    width: 200px;
+    margin: 1rem auto;
+    background-color: navy;
+    color: white;
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: var(--font-body);
+}
+
+.btn-link:hover {
+    background-color: darkgreen;
+}
