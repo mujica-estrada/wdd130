@@ -141,6 +141,13 @@ h3{
     border-bottom: 1px solid whitesmoke;
 }
 
+h4 {
+    font-family: var(--font-heading);
+    border: 3px solid #fb8500;
+    border-radius: 10px;
+    margin-bottom: .5rem;
+}
+
 p {
     font-size: 1.1rem;
     line-height: 1.5;
@@ -423,7 +430,7 @@ form:not(.contact-form) {
     padding: 1rem;
     border: 1px solid rgb(0 0 0 / 0.1);
     border-radius: 0.5rem;
-    background-color: #eee;
+    background-color: #bbccf7;
     display: grid;
 }
 
@@ -543,4 +550,54 @@ form:not(.contact-form) {
 
 .btn-link:hover {
     background-color: darkgreen;
+}
+
+/* TRIPS */
+
+.trip-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 2rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    background-color: white;
+}
+
+.trip-column table {
+    width: 100%;
+    background-color: #ffb703; /* REVISAR */
+    border-collapse: collapse;
+}
+
+.trip-column th {
+    background-color: var(--color-primary-head);
+    color: #fff;
+    font-size: 1rem;
+    border: 4px solid white;
+}
+
+.trip-column th, .trip-column td {
+    font-size: 1rem;
+    border: 4px solid white;
+    padding: .5rem;
+    text-align: center;
+}
+
+
+.trip-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+.trip-photos figure {
+    text-align: center;
+}
+
+.trip-photos img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 8px 8px 0px 0px #219EBC;
 }
