@@ -279,6 +279,15 @@ footer p {
     padding: 2rem;
     background-color: #fff;
 }
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 4rem;
+    margin-top: .5rem;
+}
+
 .radio-list {
     list-style: none;
     display: flex;
